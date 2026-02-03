@@ -17,7 +17,7 @@ media/
 staticfiles/
 
 # Virtualenv
-venv/
+venv
 .venv/
 ENV/
 env/
@@ -29,3 +29,6 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+
+
+/media

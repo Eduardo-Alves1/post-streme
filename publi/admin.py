@@ -1,3 +1,8 @@
 from django.contrib import admin
+from .models import PubliModel
 
-# Register your models here.
+
+@admin.register(PubliModel)
+class PubliAdmin(admin.ModelAdmin):
+    list_display = ("titulo", "criado_em")
+    search_fields = ("titulo", "conteudo")
