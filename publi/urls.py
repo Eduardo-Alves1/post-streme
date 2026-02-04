@@ -6,7 +6,7 @@ urlpatterns = [
     path("publicacoes/", views.PubliListCreateView.as_view(), name="publi-list-create"),
     path(
         "publicacoes/<int:pk>/",
-        views.PubliDetailRetrieveUpdateDestroyView.as_view(),
+        views.PubliRetrieveUpdateDestroyView.as_view(),
         name="publi-detail",
     ),
 ]
